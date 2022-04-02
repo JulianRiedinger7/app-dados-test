@@ -7,16 +7,16 @@ let randomizar = (max,min)=>{
 }
 
 let dados = [
-    {numero:"1",foto:"../images/uno.png"},
-    {numero:"2",foto:"../images/dos.png"},
-    {numero:"3",foto:"../images/tres.png"},
-    {numero:"4",foto:"../images/cuatro.png"},
-    {numero:"5",foto:"../images/cinco.png"},
-    {numero:"6",foto:"../images/seis.png"},
+    {numero:"1",foto:"./images/uno.png"},
+    {numero:"2",foto:"./images/dos.png"},
+    {numero:"3",foto:"./images/tres.png"},
+    {numero:"4",foto:"./images/cuatro.png"},
+    {numero:"5",foto:"./images/cinco.png"},
+    {numero:"6",foto:"./images/seis.png"},
 ]
 
 boton.addEventListener("click", ()=>{
-    imagen.src = "../images/roll-the-dice.gif";
+    imagen.src = "./images/roll-the-dice.gif";
     txt.innerHTML = "Rodando...";
     let numeroRandom = randomizar(5,0);
     setTimeout(()=>{
